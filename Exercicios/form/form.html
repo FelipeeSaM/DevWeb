@@ -1,6 +1,49 @@
 <h1>Formulário</h1>
 
-<form action="http://localhost:3003/usuarios" method="POST">
-    <input type="text" name="nome" >
-    <button>Incluir</button>
-</form> 
+<form method="POST">
+    <input type="hidden" name="id" value="3">
+    <input type="text" name="nome" placeholder="Usuario" >
+    <input type="password" name="senha" placeholder="Senha" >
+    <textarea name="bio" cols="21" rows="10"></textarea>
+    <div>
+        <input type="radio" name="tipo" value="Ademir" > Ademir
+        <input type="radio" name="tipo" value="Jogador" > Jogador
+        <input type="radio" name="tipo" value="Espectador"> Espectador
+    </div>
+    <div>
+        <input type="checkbox" name="ativo" > Ativo
+        <input type="checkbox" name="ativo" > Inativo
+    </div>
+
+    <select name="Reino">
+        <option value="">Selecione</optio>
+        <option value="Azeroth">Azeroth</optio>
+        <option value="Azkaban">Azkaban</optio>
+        <option value="Magico">Magico</optio>
+    </select>
+
+    <select name="profissoes" multiple size="6">
+        <option value="Mecanico">Mecanico</option>
+        <option value="Alfaiate">Alfaiate</option>
+        <option value="Joalheiro">Joalheiro</option>
+        <option value="Minerador">Minerador</option>
+        <option value="Escrivão">Escrivão</option>
+        <option value="Tecelão">Tecelão</option>
+    </select>
+    <button formaction="http://localhost:3003/usuarios">Incluir</button>
+    <button formaction="http://localhost:3003/usuarios/3">Alterar</button>
+</form>
+
+<style>
+    input,
+    textarea,
+    select {
+        display: block;
+        margin-bottom: 10px;
+    }
+
+    input[type="checkbox"],
+    input[type="radio"] {
+        display: inline;
+    }
+</style>
