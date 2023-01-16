@@ -1,6 +1,6 @@
 import React from 'react'
 import ReactDom from 'react-dom'
 
-var h1 = <h1>dglçmhdçlmsdl</h1>
+import BomDia from './Componentes/BomDia'
 
-ReactDom.render(h1, document.getElementById('root'))
+ReactDom.render(<BomDia nome={'Zoio'} />, document.getElementById('root'))
