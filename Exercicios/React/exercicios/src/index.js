@@ -30,12 +30,23 @@ import ReactDom from 'react-dom'
 // )
 
 // 2°.3° ex: Posso dar o nome que quiser para o import e usá-lo como objeto na chamada. Tem que ser no default
-import Multi from './Componentes/Multiplos'
+// import Multi from './Componentes/Multiplos'
+
+// ReactDom.render(
+//     <div>
+//         <Multi.BoaTarde nome="ana" />
+//         <Multi.BoaNoite nome="bia" />
+//     </div>,
+//     document.getElementById('root')
+// )
+
+// 3° ex:
+
+import Saudacao from './Componentes/Saudacao'
 
 ReactDom.render(
     <div>
-        <Multi.BoaTarde nome="ana" />
-        <Multi.BoaNoite nome="bia" />
+        <Saudacao tipo="Bom dia" nome="Zoiou" />
     </div>,
     document.getElementById('root')
 )
