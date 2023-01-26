@@ -1,11 +1,19 @@
 {
-    "users": [{
-        "id": 1,
-        "nome": "Felipe Valença",
-        "email": "lipinhojoga10@hotmail.com"
-    }, {
-        "id": 2,
-        "nome": "bibia",
-        "email": "bibiamaispotter@gmail"
-    }]
+  "users": [
+    {
+      "id": 1,
+      "name": "Felipe Valença",
+      "email": "lipinhojoga10@hotmail.com"
+    },
+    {
+      "id": 2,
+      "name": "bibia",
+      "email": "bibiamaispotter@gmail"
+    },
+    {
+      "name": "Teste pronto",
+      "email": "testando@teste.com",
+      "id": 3
+    }
+  ]
 }
